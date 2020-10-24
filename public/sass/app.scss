@@ -1,14 +1,20 @@
  
-$mobile: 0;
-$small: 576px;
-$tablet: 720px;
-$desktop: 992px;
-$largeDesktop : 1200px;
-
-$color_primary: #e78300;
-$color_secondary: #d9d9d9;
+$color_title: #e78300;
+$color_secondary: #928f8f;
+$color_primary: #000000;
 
 @import "variables.scss";
+@import "reboot.scss";
+
 @import "header.scss";
-@import "article.scss";
 @import "style.scss";
+@import "article.scss";
+@import "navbar.scss";
+@import "post.scss";
+
+.banner__header--title__title {
+    font-family: $font_title;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+

@@ -19,7 +19,7 @@
         <div id="banner__header">
             <div id="banner__header--title">
                 <img src="public/img/logo.svg" alt="" id="banner__header--title__logo">
-                <h1 id="banner_header--title__title">web dev notes</h1>
+                <h1 id="banner__header--title__title">web dev notes</h1>
             </div>
             <ul id="banner__header--navbar">
                 <li><i class="fab fa-bitbucket"></i></li>
@@ -36,35 +36,37 @@
             suscipit mollitia id repudiandae laudantium. Et officiis maiores quis ea unde.</p>
     </header>
     <div id="content">
-        <nav>
-            <h3>Navigation</h3>
-            <ul>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Categories</a></li>
-                <li><a href="">Guest post</a></li>
-                <li><a href="">Web development</a></li>
-                <li><a href="">App development</a></li>
-                <li><a href="">blogging</a></li>
-                <li><a href="">Design resources</a></li>
-                <li><a href=""><i class="far fa-user-circle"></i> Authors</a></li>
-                <li><a href="">Lissa Donira</a></li>
-                <li><a href="">Michael Kardvani</a></li>
-                <li><a href="">Jimtalarn</a></li>
-                <li><a href=""><i class="fas fa-search"></i>Search</a></li>
-                <li><a href="">About</a></li>
+        <nav class="navbar">
+            <h3 class="navbar__title">Navigation</h3>
+            <ul class="navbar__nav">
+                <li class="navbar__nav--item"><i class="fas fa-search navbar__nav--icon"></i><a href="" class="navbar__nav--link">Blog</a></li>
+                <li class="navbar__nav--item"><i class="fas fa-search navbar__nav--icon"></i><a href="" class="navbar__nav--link">Categories</a></li>
+                <li class="navbar__nav--item"><a href="" class="navbar__nav--link">Guest post</a></li>
+                <li class="navbar__nav--item"><a href="" class="navbar__nav--link">Web development</a></li>
+                <li class="navbar__nav--item"><a href="" class="navbar__nav--link">App development</a></li>
+                <li class="navbar__nav--item"><a href="" class="navbar__nav--link">blogging</a></li>
+                <li class="navbar__nav--item"><a href="" class="navbar__nav--link">Design resources</a></li>
+                <li class="navbar__nav--item"><i class="far fa-user-circle navbar__nav--icon"></i><a href="" class="navbar__nav--link">Authors</a></li>
+                <li class="navbar__nav--item"><a href="" class="navbar__nav--link">Lissa Donira</a></li>
+                <li class="navbar__nav--item"><a href="" class="navbar__nav--link">Michael Kardvani</a></li>
+                <li class="navbar__nav--item"><a href="" class="navbar__nav--link">Jimtalarn</a></li>
+                <li class="navbar__nav--item"><i class="fas fa-search navbar__nav--icon"></i><a href="" class="navbar__nav--link">Search</a></li>
+                <li class="navbar__nav--item"><i class="fas fa-search navbar__nav--icon"></i><a href="" class="navbar__nav--link">About</a></li>
             </ul>
         </nav>
         <section>
             <article class="article">
                 <div class="article__blockImg">
-                    <img src="public/img/activate-google-amp.png" alt="how to activate google's AMP"
-                        alt="react quick over" class="article__blockImg--img__img">
+                    <img src="public/img/activate-google-amp.png" alt="react quick over"
+                        class="article__blockImg--img__img">
                 </div>
                 <div class="article__body">
                     <h4 class="article__body--title">Build and publish a Ionic App</h4>
                     <hr class="article__body--hr">
-                    <p class="article__body--blockAuthor"><i class="far fa-user-circle article__body--blockAuthor__favicon"></i><a href="" class="article__body--blockAuthor__author">author</a></p>
-                    <p class="article__body--date"><i class="far fa-calendar-alt article__body--date__favicon"></i> 21/10/2002</p>
+                    <p class="article__body--blockAuthor">
+                        <i class="far fa-user-circle article__body--blockAuthor__favicon"></i>
+                        <a href="" class="article__body--author" class="article__body--blockAuthor__author">author</a></p>
+                    <p class="article__body--date"><i class="far fa-calendar-alt article__body--date__favicon"></i>21/10/2002</p>
                     <p class="article__body--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dolor
                         ullam. Rerum assumenda
                         praesentium
@@ -76,185 +78,21 @@
             </article>
         </section>
         <section>
-            <article class="article">
-                <div class="article__blockImg">
-                    <img src="public/img/be-delivery-driver.jpg" alt="be-delivery-driver"
-                        class="article__blockImg--img__img">
+            <article class="post">
+                <div class="post__header">
+                    <div class="post__header--categories">web developpement</div>
+                    <img class="post__header--img" src="public/img/activate-google-amp.png" alt="how to activate google's AMP">
                 </div>
-                <div class="article__body">
-                    <h4 class="article__body--title">3 Must Have Tools for JavaScript App Development Programmers Who Do NOT Love JavaScript</h4>
-                    <p class="article__body--blockAuthor"><i class="far fa-user-circle article__body--blockAuthor__favicon"></i><a href="" class="article__body--blockAuthor__author">author</a></p>
-                    <p class="article__body--date"><i class="far fa-calendar-alt article__body--date__favicon"></i> 21/10/2002</p>
-                    <p class="article__body--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dolor
-                        ullam. Rerum assumenda
-                        praesentium
-                        dignissimos nulla ipsam modi iste nobis libero facilis labore voluptate animi ratione,
-                        blanditiis
-                        corporis dolore est!
-                    </p>
-                </div>
-            </article>
-        </section>
-        <section>
-            <article class="article">
-                <div class="article__blockImg">
-                    <img src="public/img/reactjs-passdata.jpg" alt="react quick over"
-                        class="article__blockImg--img__img">
-                </div>
-                <div class="article__body">
-                    <h4 class="article__body--title">3 Must Have Tools for JavaScript App Development Programmers Who Do NOT Love JavaScript</h4>
-                    <p class="article__body--blockAuthor"><i class="far fa-user-circle article__body--blockAuthor__favicon"></i><a href="" class="article__body--blockAuthor__author">author</a></p>
-                    <p class="article__body--date"><i class="far fa-calendar-alt article__body--date__favicon"></i> 21/10/2002</p>
-                    <p class="article__body--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dolor
-                        ullam. Rerum assumenda
-                        praesentium
-                        dignissimos nulla ipsam modi iste nobis libero facilis labore voluptate animi ratione,
-                        blanditiis
-                        corporis dolore est!
-                    </p>
-                </div>
-            </article>
-        </section>
-        <section>
-            <article class="article">
-                <div class="article__blockImg">
-                    <img src="public/img/reactjs-passdata.jpg" alt="react quick over"
-                        class="article__blockImg--img__img">
-                </div>
-                <div class="article__body">
-                    <h4 class="article__body--title">3 Must Have Tools for JavaScript App Development Programmers Who Do NOT Love JavaScript</h4>
-                    <p class="article__body--blockAuthor"><i class="far fa-user-circle article__body--blockAuthor__favicon"></i><a href="" class="article__body--blockAuthor__author">author</a></p>
-                    <p class="article__body--date"><i class="far fa-calendar-alt article__body--date__favicon"></i> 21/10/2002</p>
-                    <p class="article__body--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dolor
-                        ullam. Rerum assumenda
-                        praesentium
-                        dignissimos nulla ipsam modi iste nobis libero facilis labore voluptate animi ratione,
-                        blanditiis
-                        corporis dolore est!
-                    </p>
-                </div>
-            </article>
-        </section>
-        <section>
-            <article class="article">
-                <div class="article__blockImg">
-                    <img src="public/img/reactjs-passdata.jpg" alt="react quick over"
-                        class="article__blockImg--img__img">
-                </div>
-                <div class="article__body">
-                    <h4 class="article__body--title">3 Must Have Tools for JavaScript App Development Programmers Who Do NOT Love JavaScript</h4>
-                    <p class="article__body--blockAuthor"><i class="far fa-user-circle article__body--blockAuthor__favicon"></i><a href="" class="article__body--blockAuthor__author">author</a></p>
-                    <p class="article__body--date"><i class="far fa-calendar-alt article__body--date__favicon"></i> 21/10/2002</p>
-                    <p class="article__body--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dolor
-                        ullam. Rerum assumenda
-                        praesentium
-                        dignissimos nulla ipsam modi iste nobis libero facilis labore voluptate animi ratione,
-                        blanditiis
-                        corporis dolore est!
-                    </p>
-                </div>
-            </article>
-        </section>
-        <section>
-            <article class="article">
-                <div class="article__blockImg">
-                    <img src="public/img/reactjs-passdata.jpg" alt="react quick over"
-                        class="article__blockImg--img__img">
-                </div>
-                <div class="article__body">
-                    <h4 class="article__body--title">3 Must Have Tools for JavaScript App Development Programmers Who Do NOT Love JavaScript</h4>
-                    <p class="article__body--blockAuthor"><i class="far fa-user-circle article__body--blockAuthor__favicon"></i><a href="" class="article__body--blockAuthor__author">author</a></p>
-                    <p class="article__body--date"><i class="far fa-calendar-alt article__body--date__favicon"></i> 21/10/2002</p>
-                    <p class="article__body--text">
+                <div class="post__body">
+                    <h4 class="post__body--title">Build and publish a Ionic App</h4>
+                    <div class="post__meta">
+                        <span><i class="far fa-user-circle post__meta--favicon"></i><a href="" class="post__meta--author">Author</a></span>
+                        <span><i class="far fa-calendar-alt post__meta--favicon"></i>21/10/2002</span>
+                    </div>
+                    <p class="post__body--excerpt">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dolor
-                        ullam. Rerum assumenda
-                        praesentium
-                        dignissimos nulla ipsam modi iste nobis libero facilis labore voluptate animi ratione,
-                        blanditiis
-                        corporis dolore est!
-                    </p>
-                </div>
-            </article>
-        </section>
-        <section>
-            <article class="article">
-                <div class="article__blockImg">
-                    <img src="public/img/reactjs-passdata.jpg" alt="react quick over"
-                        class="article__blockImg--img__img">
-                </div>
-                <div class="article__body">
-                    <h4 class="article__body--title">3 Must Have Tools for JavaScript App Development Programmers Who Do NOT Love JavaScript</h4>
-                    <p class="article__body--blockAuthor"><i class="far fa-user-circle article__body--blockAuthor__favicon"></i><a href="" class="article__body--blockAuthor__author">author</a></p>
-                    <p class="article__body--date"><i class="far fa-calendar-alt article__body--date__favicon"></i> 21/10/2002</p>
-                    <p class="article__body--text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dolor
-                        ullam. Rerum assumenda
-                        praesentium
-                        dignissimos nulla ipsam modi iste nobis libero facilis labore voluptate animi ratione,
-                        blanditiis
-                        corporis dolore est!
-                    </p>
-                </div>
-            </article>
-        </section>
-        <section>
-            <article class="article">
-                <div class="article__blockImg">
-                    <img src="public/img/reactjs-passdata.jpg" alt="react quick over"
-                        class="article__blockImg--img__img">
-                </div>
-                <div class="article__body">
-                    <h4 class="article__body--title">3 Must Have Tools for JavaScript App Development Programmers Who Do NOT Love JavaScript</h4>
-                    <p class="article__body--blockAuthor"><i class="far fa-user-circle article__body--blockAuthor__favicon"></i><a href="" class="article__body--blockAuthor__author">author</a></p>
-                    <p class="article__body--date"><i class="far fa-calendar-alt article__body--date__favicon"></i> 21/10/2002</p>
-                    <p class="article__body--text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dolor
-                        ullam. Rerum assumenda
-                        praesentium
-                        dignissimos nulla ipsam modi iste nobis libero facilis labore voluptate animi ratione,
-                        blanditiis
-                        corporis dolore est!
-                    </p>
-                </div>
-            </article>
-        </section>
-        <section>
-            <article class="article">
-                <div class="article__blockImg">
-                    <img src="public/img/reactjs-passdata.jpg" alt="react quick over"
-                        class="article__blockImg--img__img">
-                </div>
-                <div class="article__body">
-                    <h4 class="article__body--title">3 Must Have Tools for JavaScript App Development Programmers Who Do NOT Love JavaScript</h4>
-                    <p class="article__body--blockAuthor"><i class="far fa-user-circle article__body--blockAuthor__favicon"></i><a href="" class="article__body--blockAuthor__author">author</a></p>
-                    <p class="article__body--date"><i class="far fa-calendar-alt article__body--date__favicon"></i> 21/10/2002</p>
-                    <p class="article__body--text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dolor
-                        ullam. Rerum assumenda
-                        praesentium
-                        dignissimos nulla ipsam modi iste nobis libero facilis labore voluptate animi ratione,
-                        blanditiis
-                        corporis dolore est!
-                    </p>
-                </div>
-            </article>
-        </section>
-        <section>
-            <article class="article">
-                <div class="article__blockImg">
-                    <img src="public/img/reactjs-passdata.jpg" alt="react quick over"
-                        class="article__blockImg--img__img">
-                </div>
-                <div class="article__body">
-                    <h4 class="article__body--title">3 Must Have Tools for JavaScript App Development Programmers Who Do NOT Love JavaScript</h4>
-                    <p class="article__body--blockAuthor"><i class="far fa-user-circle article__body--blockAuthor__favicon"></i><a href="" class="article__body--blockAuthor__author">author</a></p>
-                    <p class="article__body--date"><i class="far fa-calendar-alt article__body--date__favicon"></i> 21/10/2002</p>
-                    <p class="article__body--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, dolor
-                        ullam. Rerum assumenda
-                        praesentium
-                        dignissimos nulla ipsam modi iste nobis libero facilis labore voluptate animi ratione,
-                        blanditiis
-                        corporis dolore est!
+                        ullam. Rerum assumenda praesentium dignissimos nulla ipsam modi iste nobis libero facilis 
+                        labore voluptate animi ratione, blanditiis corporis dolore est!
                     </p>
                 </div>
             </article>

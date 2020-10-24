@@ -1,0 +1,39 @@
+body {
+    font-family: "Didact Gothic";
+    margin: 0;
+    padding: 0;
+    color: $color_primary;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*::after {
+    box-sizing: inherit;
+}
+
+// TITLE
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Francois One", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: inherit;
+    text-rendering: optimizeLegibility;
+}
+
+h2 {
+    font-size: 2.1739130435rem;
+}
+
+h2 {
+    font-size: 1.0869565217rem;
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}

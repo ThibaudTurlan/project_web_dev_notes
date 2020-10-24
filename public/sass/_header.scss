@@ -4,11 +4,11 @@
 
 
 header {
-    // border: 1px solid black;
     padding: 1% 1% 1% 1%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
     // OFFSET RIGHT
     margin-right: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 #banner__header {
@@ -24,6 +24,7 @@ header {
 // BANNER TITLE
 #banner__header--title {
     display: flex;
+    align-items: center;
 }
 
 // LOGO
@@ -34,12 +35,14 @@ header {
 
 // TITLE SITE
 #banner__header--title__title {
-    font-weight: 700;
+    font-family: $font_title;
+    font-size: 1.5rem;
+    font-weight: 800;
 }
 
 // NAVBAR HEADER
 #banner__header--navbar {
-    width: 30%;
+    width: 170px;
     display: flex;
     justify-content: space-around;
 
@@ -59,7 +62,6 @@ header {
 }
 
 #header_text {
-    // margin-right: 30%;
     color: $color_secondary;
     text-align: justify;
 }

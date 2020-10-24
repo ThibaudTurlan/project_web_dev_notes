@@ -1,32 +1,52 @@
-h2 {
-    font-size: 2.1739130435rem;
-}
+// body {
+//     font-family: "Didact Gothic";
+//     margin: 0;
+//     padding: 0;
+//     color: $color_primary;
+// }
 
-h2 {
-    font-size: 1.0869565217rem;
-    line-height: 1.4;
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-}
+// * {
+//     box-sizing: border-box;
+// }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Francois One", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    color: inherit;
-    text-rendering: optimizeLegibility;
-}
+// *::after {
+//     box-sizing: inherit;
+// }
 
+// // TITLE
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//     font-family: "Francois One", sans-serif;
+//     // font-style: normal;
+//     // font-weight: normal;
+//     // color: inherit;
+//     // text-rendering: optimizeLegibility;
+// }
+
+// h2 {
+//     font-size: 2.1739130435rem;
+// }
+
+// h2 {
+//     font-size: 1.0869565217rem;
+//     line-height: 1.4;
+//     margin-top: 0;
+//     margin-bottom: 0.5rem;
+// }
+
+
+
+// CONTAINER NAVBAR & POST
 #content {
     display: flex;
     flex-wrap: wrap;
 }
 
+// SOUS ELEMENT DE CONT
 #content>* {
     padding: 1% 1%;
     flex-grow: 0;
@@ -41,21 +61,7 @@ h6 {
 
 }
 
-// NAVBAR
-h3 {
-    color: $color_primary;
-}
 
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li a {
-    color: $color_primary;
-    text-decoration: none;
-}
 
 
 @media screen and (min-width: $small) {
@@ -63,7 +69,6 @@ nav ul li a {
     #content section:nth-child(n) {
         // background-color: rebeccapurple;
         flex: 0 1 65%;
-
     }
 
     #content nav,
@@ -72,17 +77,14 @@ nav ul li a {
     #content section:nth-child(7) {
         // background-color: rebeccapurple;
         flex: 0 1 35%;
-
     }
 
     #banner__header {
         height: 35px;
-    
+
         display: flex;
         justify-content: space-between;
         align-items: center;
-    
-        
     }
 }
 
@@ -99,7 +101,6 @@ nav ul li a {
     #content section:nth-child(7) {
         // background-color: rebeccapurple;
         flex: 0 1 25%;
-
     }
 }
 
@@ -119,8 +120,10 @@ nav ul li a {
         flex: 0 1 20%;
 
     }
-    .article__body--title {
+
+    .article__body--title, .post__body--title {
         font-size: 2.1739130435rem;
+        line-height: 1;
     }
 }
 
