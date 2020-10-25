@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Francois One";
+  src: url("../font/Francois_One/FrancoisOne-Regular.ttf");
+}
+@font-face {
+  font-family: "Didact Gothic";
+  src: url("../font/Didact_Gothic/DidactGothic-Regular.ttf");
+}
 body {
   font-family: "Didact Gothic";
   margin: 0;
@@ -24,6 +32,7 @@ h6 {
   font-weight: normal;
   color: inherit;
   text-rendering: optimizeLegibility;
+  font-weight: 800;
 }
 
 h2 {
@@ -223,14 +232,13 @@ article {
 
 .navbar__title {
   color: #e78300;
-  font-weight: 800;
 }
 
 .navbar__nav {
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-left: 10%;
+  margin-left: 13%;
 }
 
 .navbar__nav--item {
@@ -241,13 +249,11 @@ article {
 .navbar__nav--link {
   text-decoration: none;
   color: #e78300;
-  margin-left: 15%;
+  margin-left: 30px;
 }
 
 .navbar__nav--icon + .navbar__nav--link {
-  text-decoration: none;
-  color: #e78300;
-  margin-left: 7%;
+  margin-left: 10px;
 }
 
 /*
@@ -310,12 +316,6 @@ span {
 
 .post__body--excerpt {
   color: #928f8f;
-}
-
-.banner__header--title__title {
-  font-family: "Francois One", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 800;
 }
 
 /*# sourceMappingURL=app.css.map */

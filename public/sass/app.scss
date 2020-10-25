@@ -4,6 +4,8 @@ $color_secondary: #928f8f;
 $color_primary: #000000;
 
 @import "variables.scss";
+@import "typographyes.scss";
+
 @import "reboot.scss";
 
 @import "header.scss";
@@ -11,10 +13,3 @@ $color_primary: #000000;
 @import "article.scss";
 @import "navbar.scss";
 @import "post.scss";
-
-.banner__header--title__title {
-    font-family: $font_title;
-    font-size: 1.5rem;
-    font-weight: 800;
-}
-
