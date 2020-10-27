@@ -30,7 +30,8 @@
 
 // CONTENU POST
 .post__body {
-    padding: 0 3% 15% 3%;
+    // padding: 0 3% 15% 3%;
+    padding: 3% 2% 3% 2%;
 }
 
 
@@ -68,5 +69,6 @@ span {
 }
 
 .post__body--excerpt {
-    color: $color_secondary
+    color: $color_secondary;
+    text-align: justify;
 }

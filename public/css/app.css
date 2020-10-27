@@ -133,6 +133,15 @@ header {
     justify-content: space-between;
     align-items: center;
   }
+
+  .post {
+    min-height: 450px;
+    max-height: 450px;
+  }
+
+  #content section:nth-child(-n+2) .post {
+    min-height: 500px;
+  }
 }
 @media screen and (min-width: 720px) {
   #content section:nth-child(n) {
@@ -144,6 +153,15 @@ header {
 #content section:nth-child(6),
 #content section:nth-child(7) {
     flex: 0 1 25%;
+  }
+
+  .post {
+    min-height: 400px;
+    max-height: 400px;
+  }
+
+  #content section:nth-child(-n+3) .post {
+    min-height: 500px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -158,14 +176,27 @@ header {
     flex: 0 1 20%;
   }
 
-  .article__body--title, .post__body--title {
-    font-size: 2.1739130435rem;
-    line-height: 1;
+  .post {
+    min-height: 400px;
+    max-height: 400px;
+  }
+
+  #content section:nth-child(-n+3) .post {
+    min-height: 500px;
   }
 }
 @media screen and (min-width: 1200px) {
   #content section:nth-child(n) {
     flex: 0 1 calc(100%/3);
+  }
+
+  .post {
+    min-height: 345px;
+    max-height: 345px;
+  }
+
+  #content section:nth-child(-n+4) .post {
+    min-height: 500px;
   }
 
   #content nav,
@@ -243,7 +274,7 @@ article {
 
 .navbar__nav--item {
   color: #e78300;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 .navbar__nav--link {
@@ -283,7 +314,7 @@ article {
 }
 
 .post__body {
-  padding: 0 3% 15% 3%;
+  padding: 3% 2% 3% 2%;
 }
 
 .post__body--title {
@@ -316,6 +347,7 @@ span {
 
 .post__body--excerpt {
   color: #928f8f;
+  text-align: justify;
 }
 
 /*# sourceMappingURL=app.css.map */
