@@ -52,30 +52,30 @@ header {
   margin-right: 15px;
 }
 
-#banner__header {
+#banner__header, .bannerHeader {
   height: 55px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-#banner__header--title {
+#banner__header--title, .bannerHeader__title {
   display: flex;
   align-items: center;
 }
 
-#banner__header--title__logo {
+#banner__header--title__logo, .bannerHeader__title--logo {
   width: 35px;
   margin-right: 20px;
 }
 
-#banner__header--title__title {
+#banner__header--title__title, .bannerHeader__title--title {
   font-family: "Francois One", sans-serif;
   font-size: 1.5rem;
   font-weight: 800;
 }
 
-#banner__header--navbar {
+#banner__header--navbar, .bannerHeader__navbar {
   width: 170px;
   display: flex;
   justify-content: space-around;
@@ -93,9 +93,13 @@ header {
   text-decoration: none;
 }
 
-#header_text {
+.header_text {
   color: #928f8f;
   text-align: justify;
+}
+
+.bannerHeader__navbar--icon {
+  margin: 1%;
 }
 
 #content {
@@ -127,7 +131,7 @@ header {
     flex: 0 1 35%;
   }
 
-  #banner__header {
+  #banner__header, .bannerHeader {
     height: 35px;
     display: flex;
     justify-content: space-between;

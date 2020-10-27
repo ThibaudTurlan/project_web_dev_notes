@@ -11,37 +11,35 @@ header {
     margin-right: 15px;
 }
 
-#banner__header {
+.bannerHeader {
     height: 55px;
 
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-
-    
 }
 
 // BANNER TITLE
-#banner__header--title {
+.bannerHeader__title {
     display: flex;
     align-items: center;
 }
 
 // LOGO
-#banner__header--title__logo {
+.bannerHeader__title--logo {
     width: 35px;
     margin-right: 20px;
 }
 
 // TITLE SITE
-#banner__header--title__title {
+.bannerHeader__title--title {
     font-family: $font_title;
     font-size: 1.5rem;
     font-weight: 800;
 }
 
 // NAVBAR HEADER
-#banner__header--navbar {
+.bannerHeader__navbar {
     width: 170px;
     display: flex;
     justify-content: space-around;
@@ -51,17 +49,13 @@ header {
     padding: 0;
 }
 
-#banner__header--navbar li {
+.bannerHeader__navbar--icon {
     margin: 1%;
 }
 
 
-#banner__header--navbar li a {
-    color: $color_primary;
-    text-decoration: none;
-}
-
-#header_text {
+// 
+.header_text {
     color: $color_secondary;
     text-align: justify;
 }
