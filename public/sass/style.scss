@@ -16,8 +16,9 @@
     flex-basis: 100%;
 }
 
-#content section:nth-child(3),
-#content section:nth-child(4) {
+#content section:nth-child(5),
+#content section:nth-child(6),
+#content section:nth-child(7) {
     // background-color: rebeccapurple;
     flex: 0 1 50%;
 }
@@ -40,8 +41,18 @@
         flex: 0 1 35%;
     }
 
-    .bannerHeader, .banner {
+    .bannerHeader {
         height: 35px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .banner {
+        height: 35px;
+        position: absolute;
+            top: 1210px;
 
         display: flex;
         justify-content: space-between;
