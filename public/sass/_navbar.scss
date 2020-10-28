@@ -1,8 +1,9 @@
-// NAVBAR
-.navbar__title {
-    color: $color_title;
-}
+/*
+    STYLE NAVBAR DU BLOG AVEC METHODE BEM
+*/
 
+
+// NAVBAR
 .navbar__nav {
     list-style: none;
     margin: 0;
@@ -12,6 +13,12 @@
     margin-left: 13%;
 }
 
+// NAVBAR TITLE
+.navbar__title {
+    color: $color_title;
+}
+
+// 
 .navbar__nav--item {
     color: $color_title;
     line-height: 2;

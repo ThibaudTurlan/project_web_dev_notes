@@ -98,19 +98,19 @@ header {
 */
 .banner {
   width: 100%;
-  height: 35px;
+  height: 55px;
   position: absolute;
-  top: 300px;
+  top: 1150px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   background-color: #FFFF;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .banner__title {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .banner__title--logo {
@@ -149,8 +149,9 @@ header {
   flex-basis: 100%;
 }
 
-#content section:nth-child(3),
-#content section:nth-child(4) {
+#content section:nth-child(5),
+#content section:nth-child(6),
+#content section:nth-child(7) {
   flex: 0 1 50%;
 }
 
@@ -166,8 +167,17 @@ header {
     flex: 0 1 35%;
   }
 
-  .bannerHeader, .banner {
+  .bannerHeader {
     height: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .banner {
+    height: 35px;
+    position: absolute;
+    top: 1210px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -253,15 +263,18 @@ header {
     margin-right: 30%;
   }
 }
-.navbar__title {
-  color: #e78300;
-}
-
+/*
+    STYLE NAVBAR DU BLOG AVEC METHODE BEM
+*/
 .navbar__nav {
   list-style: none;
   margin: 0;
   padding: 0;
   margin-left: 13%;
+}
+
+.navbar__title {
+  color: #e78300;
 }
 
 .navbar__nav--item {
@@ -340,6 +353,25 @@ span {
 .post__body--excerpt {
   color: #928f8f;
   text-align: justify;
+}
+
+.block-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn {
+  background-color: #FFFF;
+  color: #000000;
+  padding: 0% 25px;
+  border-radius: 20px;
+  margin-right: 10%;
+}
+
+.btn__link {
+  margin-right: 5px;
+  color: #000000;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=app.css.map */
