@@ -1,7 +1,7 @@
  
-$color_title: #e78300;
-$color_secondary: #928f8f;
-$color_primary: #000000;
+// $color_title: #e78300;
+// $color_secondary: #928f8f;
+// $color_primary: #000000;
 
 @import "variables.scss";
 @import "typographyes.scss";
@@ -9,7 +9,10 @@ $color_primary: #000000;
 @import "reboot.scss";
 
 @import "header.scss";
+@import "banner.scss";
+
 @import "style.scss";
-@import "article.scss";
+
+// @import "article.scss";
 @import "navbar.scss";
 @import "post.scss";

@@ -52,30 +52,30 @@ header {
   margin-right: 15px;
 }
 
-#banner__header, .bannerHeader {
+.bannerHeader {
   height: 55px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-#banner__header--title, .bannerHeader__title {
+.bannerHeader__title {
   display: flex;
   align-items: center;
 }
 
-#banner__header--title__logo, .bannerHeader__title--logo {
+.bannerHeader__title--logo {
   width: 35px;
   margin-right: 20px;
 }
 
-#banner__header--title__title, .bannerHeader__title--title {
+.bannerHeader__title--title {
   font-family: "Francois One", sans-serif;
   font-size: 1.5rem;
   font-weight: 800;
 }
 
-#banner__header--navbar, .bannerHeader__navbar {
+.bannerHeader__navbar {
   width: 170px;
   display: flex;
   justify-content: space-around;
@@ -84,13 +84,8 @@ header {
   padding: 0;
 }
 
-#banner__header--navbar li {
+.bannerHeader__navbar--icon {
   margin: 1%;
-}
-
-#banner__header--navbar li a {
-  color: #000000;
-  text-decoration: none;
 }
 
 .header_text {
@@ -98,7 +93,47 @@ header {
   text-align: justify;
 }
 
-.bannerHeader__navbar--icon {
+/*
+    BANNER DEVICE MOBILE
+*/
+.banner {
+  width: 100%;
+  height: 55px;
+  position: absolute;
+  top: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: #FFFF;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.banner__title {
+  display: flex;
+  align-items: center;
+}
+
+.banner__title--logo {
+  width: 35px;
+  margin-right: 20px;
+}
+
+.banner__title--title {
+  font-family: "Francois One", sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.banner__navbar {
+  width: 170px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.banner__navbar--icon {
   margin: 1%;
 }
 
@@ -131,7 +166,7 @@ header {
     flex: 0 1 35%;
   }
 
-  #banner__header, .bannerHeader {
+  .bannerHeader, .banner {
     height: 35px;
     display: flex;
     justify-content: space-between;
@@ -166,6 +201,10 @@ header {
 
   #content section:nth-child(-n+3) .post {
     min-height: 500px;
+  }
+
+  .banner {
+    display: none;
   }
 }
 @media screen and (min-width: 992px) {
@@ -214,57 +253,6 @@ header {
     margin-right: 30%;
   }
 }
-article {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-}
-
-.article__blockImg--img__img {
-  max-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-}
-
-.article__body {
-  padding: 0% 3%;
-}
-
-.article__body--title {
-  margin: 0;
-  margin-bottom: 2%;
-  color: #000000;
-  cursor: pointer;
-}
-
-.article__body--author,
-.article__body--date {
-  margin: 0;
-}
-
-.article__body--hr {
-  width: 40px;
-  height: 5px;
-  margin: 0;
-  margin-bottom: 5px;
-  background-color: black;
-  border: none;
-}
-
-.article__body--blockAuthor__favicon,
-.article__body--date__favicon {
-  margin-right: 7px;
-}
-
-.article__body--blockAuthor,
-.article__body--date {
-  margin: 0;
-}
-
-.article__body--blockAuthor__author {
-  color: black;
-  margin: 0;
-}
-
 .navbar__title {
   color: #e78300;
 }

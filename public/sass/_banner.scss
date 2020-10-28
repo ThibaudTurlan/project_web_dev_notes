@@ -1,45 +1,46 @@
 
+/*
+    BANNER DEVICE MOBILE
+*/ 
 
 
 
-
-header {
-    padding: 1% 1% 1% 1%;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-
-    // OFFSET RIGHT
-    margin-right: 15px;
-}
-
-.bannerHeader {
+.banner {
+    width: 100%;
     height: 55px;
-
+    
+    position: absolute;
+        top: 300px;
+        
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+
+    background-color: $bg_banner;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 // BANNER TITLE
-.bannerHeader__title {
+.banner__title {
     display: flex;
     align-items: center;
 }
 
 // LOGO
-.bannerHeader__title--logo {
+.banner__title--logo {
     width: 35px;
     margin-right: 20px;
 }
 
 // TITLE SITE
-.bannerHeader__title--title {
+.banner__title--title {
     font-family: $font_title;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 800;
 }
 
 // NAVBAR HEADER
-.bannerHeader__navbar {
+.banner__navbar {
     width: 170px;
     display: flex;
     justify-content: space-around;
@@ -49,14 +50,6 @@ header {
     padding: 0;
 }
 
-.bannerHeader__navbar--icon {
+.banner__navbar--icon {
     margin: 1%;
 }
-
-
-// 
-.header_text {
-    color: $color_secondary;
-    text-align: justify;
-}
-
