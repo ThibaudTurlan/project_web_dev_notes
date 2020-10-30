@@ -43,6 +43,10 @@
     cursor: pointer;
 }
 
+.post__body--title:hover {
+    color: darken($color_title, 5%);
+}
+
 // HR en dessous du title
 .post__body--title:after {
     content: '';
@@ -71,4 +75,21 @@ span {
 .post__body--excerpt {
     color: $color_secondary;
     text-align: justify;
+}
+
+/* 
+    ROTATION SUR LES ARTICLES, 
+    - PAIR
+    - IMPAIRE
+*/
+#content section:nth-child(even) {
+    .post {
+        transform: rotate($post_rotate_even);
+    }
+}
+
+#content section:nth-child(odd) {
+    .post {
+        transform: rotate($post_rotate_odd);
+    }
 }
