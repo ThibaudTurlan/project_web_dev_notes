@@ -1,95 +1,105 @@
 
-/*
-    STYLE ARTICLE DU BLOG AVEC METHODE BEM
-*/
+// /*
+//     STYLE ARTICLE DU BLOG AVEC METHODE BEM
+// */
+
+// .post {
+//     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+//     border: 1px solid #b8b8b8;
+// }
+
+// .post__header {
+//     position: relative;
+// }
+
+// // CATHEGORES POST
+// .post__header--categories {
+//     font-family: $font_title;
+//     color: $color_cathegories;
+//     text-shadow: 1px 1px 2px #000000;
+//     position: absolute;
+//     margin: 5px 10px;
+// }
+
+// .post__header--img {
+//     max-width: 100%;
+//     min-height: 100%;
+//     width: auto;
+//     height: auto;
+// }
+
+// // CONTENU POST
+// .post__body {
+//     // padding: 0 3% 15% 3%;
+//     padding: 3% 2% 3% 2%;
+// }
 
 
+// // TITLE POST
+// .post__body--title {
+//     margin: 0;
+//     margin-bottom: 2%;
+//     color: $color_title;
+//     cursor: pointer;
+// }
 
-.post {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-}
+// .post__body--title:hover {
+//     color: darken($color_title, 5%);
+// }
 
-.post__header {
-    position: relative;
-}
-// CATHEGORES POST
-.post__header--categories {
-    font-family: $font_title;
-    color: $color_cathegories;
-    text-shadow: 1px 1px 2px #000000;
-    position: absolute;
-    margin: 5px 10px;
-}
+// // HR en dessous du title
+// .post__body--title:after {
+//     content: '';
+//     background: $color_primary;
+//     height: 5px;
+//     width: 3em;
+//     display: block;
+//     margin-top: 0.2em;
+// }
 
-.post__header--img {
-    max-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-}
+// // a trouvé mieux, mais reste propre en html
+// .post__meta span {
+//     display: block;
+// }
 
-// CONTENU POST
-.post__body {
-    // padding: 0 3% 15% 3%;
-    padding: 3% 2% 3% 2%;
-}
+// // ICON
+// .post__meta--icon {
+//     margin-right: 7px;
+// }
+
+// // INFO 
+// .post__meta--author {
+//     color: $color_primary;
+// }
+
+// .post__body--excerpt {
+//     color: $color_secondary;
+//     text-align: justify;
+// }
 
 
-// TITLE POST
-.post__body--title {
-    margin: 0;
-    margin-bottom: 2%;
-    color: $color_title;
-    cursor: pointer;
-}
+// /*
+//     COMPATIBILITE ROTATE
+// */
+// @mixin rotate($value) {
+//     transform: rotate($value);
+//     -webkit-transform: rotate();
+//     -ms-transform: rotate($value);
+// }
 
-.post__body--title:hover {
-    color: darken($color_title, 5%);
-}
+// /* 
+//     ROTATION SUR LES ARTICLES, 
+//     - PAIR
+//     - IMPAIRE
+// */
+// #content section:nth-child(even) {
+//     .post {
+//         @include rotate($post_rotate_even);
+//     }
+// }
 
-// HR en dessous du title
-.post__body--title:after {
-    content: '';
-    background: $color_primary;
-    height: 5px;
-    width: 3em;
-    display: block;
-    margin-top: 0.2em;
-}
-
-// a trouvé mieux, mais respte propre en html
-span {
-    display: block;
-}
-
-// FAVICON
-.post__meta--favicon {
-    margin-right: 7px;
-}
-
-// INFO 
-.post__meta--author {
-    color: $color_primary;
-}
-
-.post__body--excerpt {
-    color: $color_secondary;
-    text-align: justify;
-}
-
-/* 
-    ROTATION SUR LES ARTICLES, 
-    - PAIR
-    - IMPAIRE
-*/
-#content section:nth-child(even) {
-    .post {
-        transform: rotate($post_rotate_even);
-    }
-}
-
-#content section:nth-child(odd) {
-    .post {
-        transform: rotate($post_rotate_odd);
-    }
-}
+// #content section:nth-child(odd) {
+//     .post {
+//         @include rotate($post_rotate_odd);
+//     }
+// }

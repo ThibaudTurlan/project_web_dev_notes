@@ -1,0 +1,40 @@
+.navbar {
+    @include navbar($color: $color_title);
+}
+
+.post {
+    @include post();
+}
+
+/* 
+ROTATION DES ARTICLES, 
+- PAIR
+- IMPAIRE
+*/
+#content section:nth-child(even) {
+    .post {
+        @include rotate($post_rotate_even);
+    }
+}
+
+#content section:nth-child(odd) {
+    .post {
+        @include rotate($post_rotate_odd);
+    }
+}
+
+// bagnier floatent avec ces sous ellements
+.bannerFloat {
+    @include banner($position: absolute, $top: 1150px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.block-btn {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.btn {
+    @include btn();
+}

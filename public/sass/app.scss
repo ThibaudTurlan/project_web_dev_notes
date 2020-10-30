@@ -1,16 +1,24 @@
  
 
 @import "variables.scss";
-@import "typographyes.scss";
-
 @import "reboot.scss";
 
+@import "mixins/mixins.scss";
+@import "mixins/banner.scss";
+@import "mixins/btn.scss";
+@import "mixins/navbar.scss";
+@import "mixins/post.scss";
+
 @import "header.scss";
-@import "banner.scss";
 
-@import "style.scss";
+@import "build.scss";
+@import "display.scss";
 
-@import "navbar.scss";
-@import "post.scss";
+// @import "typographyes.scss";
+// @import "bannerFloat.scss";
+// @import "style.scss";
+// @import "navbar.scss";
+// @import "post.scss";
+// @import "btn.scss";
 
-@import "btn.scss";
+

@@ -1,0 +1,17 @@
+@mixin btn() {
+    & {
+        background-color: $btn_bg;
+        color: $btn_color;
+        padding: 0% 25px;
+        border-radius: 20px;
+        border: 1px solid $btn_color;
+        margin-right: 10%;
+    }
+
+    &__link {
+        margin-right: 5px;
+        color: $btn_color;
+        text-decoration: none;
+    }
+
+}
