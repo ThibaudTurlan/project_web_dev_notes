@@ -1,0 +1,79 @@
+/*
+    STYLE ARTICLE DU BLOG AVEC METHODE BEM
+*/
+
+@mixin post() {
+
+    & {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        background-color: $bg_post;
+    }
+
+    &__header {
+        position: relative;
+    }
+
+    // CATHEGORES POST
+    &__header--categories {
+        font-family: $font_title;
+        color: $color_cathegories_post;
+        text-shadow: 1px 1px 2px #000000;
+        position: absolute;
+        margin: 5px 10px;
+    }
+
+    &__header--img {
+        max-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+    }
+
+    // CONTENU POST
+    &__body {
+        padding: 3% 2% 3% 2%;
+    }
+
+    // TITLE POST
+    &__body--title {
+        margin: 0;
+        margin-bottom: 2%;
+        // color: $color_title;
+        color: $color_title_post;
+        cursor: pointer;
+    }
+
+    &__body--title:hover {
+        color: darken($color_title_post, 5%);
+    }
+
+    // HR en dessous du title
+    &__body--title:after {
+        content: '';
+        background: $color_hr_post;
+        height: 5px;
+        width: 3em;
+        display: block;
+        margin-top: 0.2em;
+    }
+
+    // a trouvé mieux, mais reste propre en html
+    &__meta span {
+        display: block;
+    }
+
+    // ICON
+    &__meta--icon {
+        margin-right: 7px;
+    }
+
+    // INFO AUTHOR
+    &__meta--author {
+        color: $color_meta_post;
+    }
+
+    &__body--excerpt {
+        color: $color_excerpt_post;
+        text-align: justify;
+    }
+}
