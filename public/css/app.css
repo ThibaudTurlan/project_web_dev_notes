@@ -51,15 +51,17 @@ h2 {
 /*
     STYLE ARTICLE DU BLOG AVEC METHODE BEM
 */
-/*
-    STYLE HEADER 
-*/
 header {
   padding: 1% 1% 1% 1%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   margin-right: 15px;
 }
 
+/* 
+    BANNER HEADER WITH SUB ITEM
+    - BANNER TITLE
+    - ICON LISTING
+*/
 .bannerHeader {
   height: 55px;
   width: 100%;
@@ -67,7 +69,7 @@ header {
   flex-direction: column;
   position: initial;
   top: 0;
-  background-color: #FFFF;
+  background-color: #FFFFFF;
 }
 .bannerHeader__title {
   height: 25px;
@@ -115,20 +117,36 @@ header {
   color: #e78300;
   margin-left: 30px;
 }
+.navbar__nav--link:hover {
+  color: #ce7500;
+}
 .navbar__nav--icon + .navbar__nav--link {
   margin-left: 10px;
 }
 
+/*
+    STYLE POST WITH SUB ITEM
+    - post__header
+    -- post__header--categories
+    -- post__header--img
+    - post__body
+    -- post__body-- title
+    -- post__body--excerpt
+    -- post__meta
+    --- post__meta--author
+    --- post__meta--icon
+
+*/
 .post {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  border: 1px solid #b8b8b8;
+  background-color: #FFFFFF;
 }
 .post__header {
   position: relative;
 }
 .post__header--categories {
   font-family: "Francois One", sans-serif;
-  color: #FFFF;
+  color: #FFFFFF;
   text-shadow: 1px 1px 2px #000000;
   position: absolute;
   margin: 5px 10px;
@@ -174,22 +192,10 @@ header {
 }
 
 /* 
-ROTATION DES ARTICLES, 
-- PAIR
-- IMPAIRE
+    BANNER FLOAT WITH SUB ITEM FOR DEVICE MOBILE (MAX-WIDTH: 719px)
+    - BANNER TITLE
+    - ICON LISTING
 */
-#content section:nth-child(even) .post {
-  transform: rotate(-1deg);
-  -webkit-transform: rotate();
-  -ms-transform: rotate(-1deg);
-}
-
-#content section:nth-child(odd) .post {
-  transform: rotate(1deg);
-  -webkit-transform: rotate();
-  -ms-transform: rotate(1deg);
-}
-
 .bannerFloat {
   height: 55px;
   width: 100%;
@@ -197,7 +203,7 @@ ROTATION DES ARTICLES,
   flex-direction: column;
   position: absolute;
   top: 1150px;
-  background-color: #FFFF;
+  background-color: #FFFFFF;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 .bannerFloat__title {
@@ -229,7 +235,7 @@ ROTATION DES ARTICLES,
 }
 
 .btn {
-  background-color: #FFFF;
+  background-color: #FFFFFF;
   color: #000000;
   padding: 0% 25px;
   border-radius: 20px;
@@ -243,10 +249,8 @@ ROTATION DES ARTICLES,
 }
 
 /* 
-    DISPLAY CONTENT PAGE DISPOSITION NAVBAR ARTICLE
-*/
-/* 
-    FORMAT MOBILE
+    DISPLAY CONTENU DE LA PAGE 
+    DISPOSITION DES ELEMENTS: NAVBAR, ARTICLE
 */
 #content {
   display: flex;
@@ -260,6 +264,26 @@ ROTATION DES ARTICLES,
   flex-basis: 100%;
 }
 
+/* 
+    ROTATION DES ARTICLES, 
+    - PAIR
+    - IMPAIRE
+*/
+#content section:nth-child(even) .post {
+  transform: rotate(-1deg);
+  -webkit-transform: rotate();
+  -ms-transform: rotate(-1deg);
+}
+
+#content section:nth-child(odd) .post {
+  transform: rotate(1deg);
+  -webkit-transform: rotate();
+  -ms-transform: rotate(1deg);
+}
+
+/*
+    FORMAT MOBILE
+*/
 #content section:nth-child(5),
 #content section:nth-child(6),
 #content section:nth-child(7) {
@@ -267,7 +291,7 @@ ROTATION DES ARTICLES,
 }
 
 /* 
-    FORMAT MOBIL XL
+    FORMAT MOBILE XL
 */
 @media screen and (min-width: 576px) {
   #content section:nth-child(n) {

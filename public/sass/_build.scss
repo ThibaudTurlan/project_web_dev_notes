@@ -1,34 +1,62 @@
+
+
+
+header {
+    padding: 1% 1% 1% 1%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+    // OFFSET RIGHT
+    margin-right: 15px;
+}
+
+/* 
+    BANNER HEADER WITH SUB ITEM
+    - BANNER TITLE
+    - ICON LISTING
+*/
+.bannerHeader {
+    @include banner($font_size: 1.5rem);
+}
+
+.header_text {
+    color: $color_secondary;
+    text-align: justify;
+}
+
+// 
 .navbar {
     @include navbar($color: $color_title);
 }
 
+/*
+    STYLE POST WITH SUB ITEM
+    - post__header
+    -- post__header--categories
+    -- post__header--img
+    - post__body
+    -- post__body-- title
+    -- post__body--excerpt
+    -- post__meta
+    --- post__meta--author
+    --- post__meta--icon
+
+*/ 
 .post {
     @include post();
 }
 
 /* 
-ROTATION DES ARTICLES, 
-- PAIR
-- IMPAIRE
+    BANNER FLOAT WITH SUB ITEM FOR DEVICE MOBILE (MAX-WIDTH: 719px)
+    - BANNER TITLE
+    - ICON LISTING
 */
-#content section:nth-child(even) {
-    .post {
-        @include rotate($post_rotate_even);
-    }
-}
-
-#content section:nth-child(odd) {
-    .post {
-        @include rotate($post_rotate_odd);
-    }
-}
-
-// bagnier floatent avec ces sous ellements
 .bannerFloat {
     @include banner($position: absolute, $top: 1150px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
+
+// 
 .block-btn {
     display: flex;
     justify-content: flex-end;

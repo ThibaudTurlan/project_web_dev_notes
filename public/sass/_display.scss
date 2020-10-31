@@ -1,11 +1,8 @@
-
 /* 
-    DISPLAY CONTENT PAGE DISPOSITION NAVBAR ARTICLE
+    DISPLAY CONTENU DE LA PAGE 
+    DISPOSITION DES ELEMENTS: NAVBAR, ARTICLE
 */
 
-/* 
-    FORMAT MOBILE
-*/
 
 // CONTAINER NAVBAR & POST
 #content {
@@ -21,6 +18,26 @@
     flex-basis: 100%;
 }
 
+/* 
+    ROTATION DES ARTICLES, 
+    - PAIR
+    - IMPAIRE
+*/
+#content section:nth-child(even) {
+    .post {
+        @include rotate($post_rotate_even);
+    }
+}
+
+#content section:nth-child(odd) {
+    .post {
+        @include rotate($post_rotate_odd);
+    }
+}
+
+/*
+    FORMAT MOBILE
+*/
 #content section:nth-child(5),
 #content section:nth-child(6),
 #content section:nth-child(7) {
@@ -28,7 +45,7 @@
 }
 
 /* 
-    FORMAT MOBIL XL
+    FORMAT MOBILE XL
 */
 @media screen and (min-width: $small) {
 
@@ -51,18 +68,18 @@
         justify-content: space-between;
         align-items: center;
     }
-    
+
     .bannerFloat {
         height: 35px;
         position: absolute;
-            top: 1210px;
+        top: 1210px;
 
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
-    
+
     // HEIGHT POST 
     .post {
         height: 450px;
@@ -90,11 +107,11 @@
     #content section:nth-child(7) {
         flex: 0 1 25%;
     }
-    
+
     .post {
         height: 400px;
     }
-    
+
     #content section:nth-child(-n+3) {
         .post {
             min-height: 500px;
@@ -121,7 +138,7 @@
     #content section:nth-child(7) {
         flex: 0 1 20%;
     }
-    
+
     // HEIGHT POST  
     .post {
         height: 400px;
@@ -132,14 +149,14 @@
         .post {
             min-height: 500px;
         }
-    }    
+    }
 }
 
 @media screen and (min-width: $largeDesktop) {
     #content section:nth-child(n) {
         flex: 0 1 calc(100%/3);
     }
-    
+
     // HEIGHT POST  
     .post {
         height: 345px;
@@ -167,7 +184,7 @@
     #content section:nth-child(n) {
         flex: 0 1 calc(100%/3);
     }
-    
+
     // HEIGHT POST 
     .post {
         height: 400px;

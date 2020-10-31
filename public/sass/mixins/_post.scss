@@ -2,11 +2,11 @@
     STYLE ARTICLE DU BLOG AVEC METHODE BEM
 */
 
-@mixin post {
+@mixin post() {
 
     & {
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-        border: 1px solid #b8b8b8;
+        background-color: $bg_post;
     }
 
     &__header {
@@ -16,7 +16,7 @@
     // CATHEGORES POST
     &__header--categories {
         font-family: $font_title;
-        color: $color_cathegories;
+        color: $color_cathegories_post;
         text-shadow: 1px 1px 2px #000000;
         position: absolute;
         margin: 5px 10px;
@@ -31,27 +31,26 @@
 
     // CONTENU POST
     &__body {
-        // padding: 0 3% 15% 3%;
         padding: 3% 2% 3% 2%;
     }
-
 
     // TITLE POST
     &__body--title {
         margin: 0;
         margin-bottom: 2%;
-        color: $color_title;
+        // color: $color_title;
+        color: $color_title_post;
         cursor: pointer;
     }
 
     &__body--title:hover {
-        color: darken($color_title, 5%);
+        color: darken($color_title_post, 5%);
     }
 
     // HR en dessous du title
     &__body--title:after {
         content: '';
-        background: $color_primary;
+        background: $color_hr_post;
         height: 5px;
         width: 3em;
         display: block;
@@ -70,11 +69,11 @@
 
     // INFO AUTHOR
     &__meta--author {
-        color: $color_primary;
+        color: $color_meta_post;
     }
 
     &__body--excerpt {
-        color: $color_secondary;
+        color: $color_excerpt_post;
         text-align: justify;
     }
 }
