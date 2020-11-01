@@ -26,6 +26,6 @@ Pour éviter les warning liés aux balise section sans titre, j'ai fait le choix
 * **Avantage** : code HTML complétement valide 
 * **Inconénient** : sémantique HTML moins compréenssible, car un peu moin respecté 
 
-## Rendu  
+## Rendu du travail  
 
-Rendez-vous sur [Rendu](https://thibaudturlan.github.io/project_web_dev_notes/)
+Rendez-vous sur [Site Web Dev Notes](https://thibaudturlan.github.io/project_web_dev_notes/)
