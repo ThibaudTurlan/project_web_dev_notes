@@ -5,13 +5,18 @@
         padding: 0% 25px;
         border-radius: 20px;
         border: 1px solid $btn_color;
-        margin-right: 10%;
+        
+        text-decoration: none;
     }
 
-    &__link {
-        margin-right: 5px;
-        color: $btn_color;
-        text-decoration: none;
+    // &__link {
+    //     margin-right: 5px;
+    //     color: $btn_color;
+    //     text-decoration: none;
+    // }
+
+    &__icon {
+        margin-left: 10px;
     }
 
 }

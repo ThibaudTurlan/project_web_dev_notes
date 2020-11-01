@@ -60,9 +60,9 @@ header {
 .block-btn {
     display: flex;
     justify-content: flex-end;
-
 }
 
 .btn {
     @include btn();
+    margin-right: 10%;
 }

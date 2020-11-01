@@ -235,17 +235,18 @@ header {
 }
 
 .btn {
+  margin-right: 10%;
+}
+.btn {
   background-color: #FFFFFF;
   color: #000000;
   padding: 0% 25px;
   border-radius: 20px;
   border: 1px solid #000000;
-  margin-right: 10%;
-}
-.btn__link {
-  margin-right: 5px;
-  color: #000000;
   text-decoration: none;
+}
+.btn__icon {
+  margin-left: 10px;
 }
 
 /* 
