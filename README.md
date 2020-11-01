@@ -24,7 +24,7 @@ Project Copy website Web Dev Notes
 Pour éviter les warning liés aux balise section sans titre, j'ai fait le choix de les remplacer les balises `<section>` par les class `.sections`.
 
 * **Avantage** : code HTML complétement valide 
-* **Inconénient** : sémantique HTML moins compréenssible, car un peu moin respecté 
+* **Inconénient** : sémantique HTML moins compréenssible, car un peu moins respecté 
 
 ## Rendu du travail  
 
