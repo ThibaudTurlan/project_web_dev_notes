@@ -23,13 +23,13 @@
     - PAIR
     - IMPAIRE
 */
-#content .section:nth-child(even) {
+#content section:nth-child(even) {
     .post {
         @include rotate($post_rotate_even);
     }
 }
 
-#content .section:nth-child(odd) {
+#content section:nth-child(odd) {
     .post {
         @include rotate($post_rotate_odd);
     }
@@ -38,9 +38,9 @@
 /*
     FORMAT MOBILE
 */
-#content .section:nth-child(5),
-#content .section:nth-child(6),
-#content .section:nth-child(7) {
+#content section:nth-child(5),
+#content section:nth-child(6),
+#content section:nth-child(7) {
     flex: 0 1 50%;
 }
 
@@ -49,14 +49,14 @@
 */
 @media screen and (min-width: $small) {
 
-    #content .section:nth-child(n) {
+    #content section:nth-child(n) {
         flex: 0 1 65%;
     }
 
     #content nav,
-    #content .section:nth-child(4),
-    #content .section:nth-child(6),
-    #content .section:nth-child(7) {
+    #content section:nth-child(4),
+    #content section:nth-child(6),
+    #content section:nth-child(7) {
         flex: 0 1 35%;
     }
 
@@ -85,7 +85,7 @@
         height: 450px;
     }
 
-    #content .section:nth-child(-n+2) {
+    #content section:nth-child(-n+2) {
         .post {
             min-height: 500px;
         }
@@ -96,15 +96,15 @@
     FORMAT TABLET
 */
 @media screen and (min-width: $tablet) {
-    #content .section:nth-child(n) {
+    #content section:nth-child(n) {
         flex: 0 1 50%;
 
     }
 
     #content nav,
-    #content .section:nth-child(3),
-    #content .section:nth-child(6),
-    #content .section:nth-child(7) {
+    #content section:nth-child(3),
+    #content section:nth-child(6),
+    #content section:nth-child(7) {
         flex: 0 1 25%;
     }
 
@@ -112,7 +112,7 @@
         height: 400px;
     }
 
-    #content .section:nth-child(-n+3) {
+    #content section:nth-child(-n+3) {
         .post {
             min-height: 500px;
         }
@@ -128,14 +128,14 @@
     FORMAT DESKTOP
 */
 @media screen and (min-width: $desktop) {
-    #content .section:nth-child(n) {
+    #content section:nth-child(n) {
         flex: 0 1 40%;
     }
 
     #content nav,
-    #content .section:nth-child(5),
-    #content .section:nth-child(6),
-    #content .section:nth-child(7) {
+    #content section:nth-child(5),
+    #content section:nth-child(6),
+    #content section:nth-child(7) {
         flex: 0 1 20%;
     }
 
@@ -145,7 +145,7 @@
     }
 
     // height des 3 premier articles
-    #content .section:nth-child(-n+3) {
+    #content section:nth-child(-n+3) {
         .post {
             min-height: 500px;
         }
@@ -153,7 +153,7 @@
 }
 
 @media screen and (min-width: $largeDesktop) {
-    #content .section:nth-child(n) {
+    #content section:nth-child(n) {
         flex: 0 1 calc(100%/3);
     }
 
@@ -162,16 +162,16 @@
         height: 345px;
     }
 
-    #content .section:nth-child(-n+4) {
+    #content section:nth-child(-n+4) {
         .post {
             min-height: 500px;
         }
     }
 
     #content nav,
-    #content .section:nth-child(4),
-    #content .section:nth-child(6),
-    #content .section:nth-child(7) {
+    #content section:nth-child(4),
+    #content section:nth-child(6),
+    #content section:nth-child(7) {
         flex: 0 1 calc(100%/6);
     }
 
@@ -181,7 +181,7 @@
 }
 
 @media screen and (min-width: $xxlDesktop) {
-    #content .section:nth-child(n) {
+    #content section:nth-child(n) {
         flex: 0 1 calc(100%/3);
     }
 
@@ -190,16 +190,16 @@
         height: 400px;
     }
 
-    #content .section:nth-child(-n+4) {
+    #content section:nth-child(-n+4) {
         .post {
             min-height: 500px;
         }
     }
 
     #content nav,
-    #content .section:nth-child(4),
-    #content .section:nth-child(6),
-    #content .section:nth-child(7) {
+    #content section:nth-child(4),
+    #content section:nth-child(6),
+    #content section:nth-child(7) {
         flex: 0 1 calc(100%/6);
     }
 
